@@ -32,7 +32,7 @@ let Home = () => {
                     </tr>
                     <tr>
                         <td>Created</td>
-                        <td><b>May 2024</b></td>
+                        <td><b>Aug 2024</b></td>
                     </tr>
                      <tr>
                         <td>React /<br/> React DOM</td>

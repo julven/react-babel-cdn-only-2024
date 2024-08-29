@@ -14,13 +14,7 @@
 <body>
 	<div id="root-box"></div> 
 	<script  type="text/javascript">
-		
-		// console.log(window)
-
 		const init = async () => {
-			
-
-
 			let allCode = "";
 			let files = [
 				"context.jsx",
@@ -38,13 +32,16 @@
 				"app.jsx",
 				"index.jsx"
 				];
-			for( x in files) {
 
+			let loadscript = []
+			for( x in files) {
+				// console.log("loading "+files[x])
 				let code = await fetch(files[x])
 				code = await code.text()
-
 				allCode = allCode + code;
+
 			}
+		
 
 			// console.log(allCode)
 			const jsCode = Babel.transform(allCode, {
